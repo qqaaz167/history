@@ -225,7 +225,6 @@ function render() {
       <div class="card-name">${p["姓名"]}</div>
       <div class="card-atrib">${p["貢獻"]}</div>
       <div class="card-desc collapsed">${desc}</div>
-      <button class="expand-btn">展開 ▼</button>
     </div>`;
   }).join("");
 }
@@ -235,7 +234,6 @@ function toggleCard(card) {
   const btn = card.querySelector(".expand-btn");
   const isCollapsed = desc.classList.contains("collapsed");
   desc.classList.toggle("collapsed", !isCollapsed);
-  btn.textContent = isCollapsed ? "收起 ▲" : "展開 ▼";
 }
 
 // Init
