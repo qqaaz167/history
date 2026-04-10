@@ -422,9 +422,10 @@ function endQuiz() {
   document.getElementById('r-score').textContent = quizScore + ' / ' + QUIZ_TOTAL;
   const grades = [
     [10, '史學大家 🏆'],
-    [7,  '博學多聞 📚'],
-    [4,  '尚需努力 📖'],
-    [0,  '繼續加油 💪']
+    [8,  '博學多聞 🥇'],
+    [6,  '略勝路人 📚'],
+    [4,  '回去練練! 📖'],
+    [0,  '你全靠猜? 💪']
   ];
   const grade = grades.find(g => quizScore >= g[0]);
   document.getElementById('r-grade').textContent = grade[1];
