@@ -421,11 +421,11 @@ function endQuiz() {
   document.getElementById('quiz-main').style.display = 'none';
   document.getElementById('r-score').textContent = quizScore + ' / ' + QUIZ_TOTAL;
   const grades = [
-    [10, '史學大家 🏆'],
-    [8,  '博學多聞 🥇'],
-    [6,  '略勝路人 📚'],
-    [4,  '回去練練! 📖'],
-    [0,  '你全靠猜? 💪']
+    [10, '為師沒什麼能教你了 🏆'],
+    [8,  '你知道太多了 🥇'],
+    [6,  '略勝路人一點 📚'],
+    [4,  '進步空間很大 📖'],
+    [0,  '我是誰❓我在哪❓']
   ];
   const grade = grades.find(g => quizScore >= g[0]);
   document.getElementById('r-grade').textContent = grade[1];
